@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="منصة تعليم تقنية ثنائية اللغة تبدأ من توثيق المتطلبات وتنتهي بقواعد البيانات والذكاء الاصطناعي." />
+  <title>مسار التقنية | Tech Path</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+  <header class="topbar">
+    <a class="brand" href="#/home" aria-label="Home"><span class="brand-mark">TP</span><span><b data-i18n="brand">مسار التقنية</b><small>Tech Path</small></span></a>
+    <nav class="desktop-nav" aria-label="Primary">
+      <a href="#/home" data-nav="home" data-i18n="home">الرئيسية</a>
+      <a href="#/lessons" data-nav="lessons" data-i18n="lessons">الدروس</a>
+      <a href="#/sql" data-nav="sql">SQL</a>
+      <a href="#/examples" data-nav="examples" data-i18n="examples">الأمثلة</a>
+      <a href="#/quiz" data-nav="quiz" data-i18n="quiz">الاختبار</a>
+    </nav>
+    <div class="toolbar">
+      <button class="icon-btn" id="searchBtn" title="Search">⌕</button>
+      <button class="lang-btn" id="langBtn">EN</button>
+      <button class="icon-btn" id="modeBtn" title="Light / Dark">☾</button>
+      <button class="icon-btn mobile-only" id="menuBtn">☰</button>
+    </div>
+  </header>
+
+  <aside class="mobile-menu" id="mobileMenu">
+    <a href="#/home" data-i18n="home">الرئيسية</a><a href="#/lessons" data-i18n="lessons">الدروس</a><a href="#/sql">SQL</a><a href="#/examples" data-i18n="examples">الأمثلة</a><a href="#/quiz" data-i18n="quiz">الاختبار</a>
+  </aside>
+
+  <main id="app" tabindex="-1"></main>
+
+  <div class="search-modal" id="searchModal" aria-hidden="true">
+    <div class="search-panel">
+      <div class="search-head"><input id="globalSearch" placeholder="ابحث عن درس أو أمر SQL..." /><button id="closeSearch">×</button></div>
+      <div id="searchResults" class="search-results"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
