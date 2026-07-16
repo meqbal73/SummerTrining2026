@@ -20,17 +20,20 @@
       <a href="#/sql" data-nav="sql">SQL</a>
       <a href="#/examples" data-nav="examples" data-i18n="examples">الأمثلة</a>
       <a href="#/quiz" data-nav="quiz" data-i18n="quiz">الاختبار</a>
+      <a href="#/glossary" data-nav="glossary" data-i18n="glossary">المصطلحات</a>
     </nav>
     <div class="toolbar">
       <button class="icon-btn" id="searchBtn" title="Search">⌕</button>
       <button class="lang-btn" id="langBtn">EN</button>
       <button class="icon-btn" id="modeBtn" title="Light / Dark">☾</button>
+      <a class="icon-btn" id="progressBtn" href="#/progress" title="Progress">◔</a>
+      <a class="icon-btn" id="settingsBtn" href="#/settings" title="Settings">⚙</a>
       <button class="icon-btn mobile-only" id="menuBtn">☰</button>
     </div>
   </header>
 
   <aside class="mobile-menu" id="mobileMenu">
-    <a href="#/home" data-i18n="home">الرئيسية</a><a href="#/lessons" data-i18n="lessons">الدروس</a><a href="#/sql">SQL</a><a href="#/examples" data-i18n="examples">الأمثلة</a><a href="#/quiz" data-i18n="quiz">الاختبار</a>
+    <a href="#/home" data-i18n="home">الرئيسية</a><a href="#/lessons" data-i18n="lessons">الدروس</a><a href="#/sql">SQL</a><a href="#/examples" data-i18n="examples">الأمثلة</a><a href="#/quiz" data-i18n="quiz">الاختبار</a><a href="#/glossary" data-i18n="glossary">المصطلحات</a><a href="#/progress" data-i18n="progress">تقدمي</a><a href="#/settings" data-i18n="settings">الإعدادات</a>
   </aside>
 
   <main id="app" tabindex="-1"></main>
@@ -43,6 +46,10 @@
   </div>
 
   <div class="toast" id="toast"></div>
+  <canvas id="confetti"></canvas>
+  <script src="data-examples.js"></script>
+  <script src="data-quiz.js"></script>
+  <script src="data-glossary.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
